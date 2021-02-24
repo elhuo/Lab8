@@ -83,7 +83,7 @@ describe('Party Horn Tests', () => {
     });
 
   });
-
+ 
   it('Error shown if volume input number is out of given range', () => {
     cy.get('#volume-number').invoke('val', 101).trigger('input');
     cy.get('#honk-btn').click()

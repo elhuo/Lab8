@@ -18,7 +18,7 @@ describe('formatVolumeIconPath test group', () => {
             .toMatch('./assets/media/icons/volume-level-1.svg');
         expect(main.formatVolumeIconPath(33))
             .toMatch('./assets/media/icons/volume-level-1.svg');
-    });
+    }); 
     test('Level 0 Icon', () => {
         expect(main.formatVolumeIconPath(0))
             .toMatch('./assets/media/icons/volume-level-0.svg');
