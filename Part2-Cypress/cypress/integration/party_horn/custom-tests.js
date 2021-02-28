@@ -89,5 +89,9 @@ describe('Party Horn Tests', () => {
     cy.get('#honk-btn').click()
     cy.get('input:invalid').should('have.length', 1);
 
+    cy.get('#volume-number').invoke('val', -1).trigger('input');
+    cy.get('#honk-btn').click()
+    cy.get('input:invalid').should('have.length', 1);
+
   });
 });
